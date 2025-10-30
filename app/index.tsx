@@ -10,7 +10,6 @@ export default function Index() {
       }}
     >
       <Text>Maid najjaci programer na svetu</Text>
-      <Text>67</Text>
     </View>
   );
 }
