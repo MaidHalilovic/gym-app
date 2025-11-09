@@ -5,10 +5,9 @@ const Header = () => {
     header: {
       backgroundColor: "#BB6653",
       display: "flex",
-      // alignItems: "center",
       justifyContent: "center",
       flexDirection: "row",
-      gap: 70,
+      gap: 80,
       height: 180,
     },
     searchBox: {
