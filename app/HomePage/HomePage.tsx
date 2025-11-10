@@ -30,7 +30,7 @@ const HomePage = () => {
         <Text>Click the tracking tab to set your monthly visits!</Text>
         <Button
           title='Check your process'
-          onPress={() => router.push("/pages/Tracking/VisitsPerMonth")}
+          onPress={() => router.push("/Tracking/VisitsPerMonth")}
           color='green'
         />
       </View>

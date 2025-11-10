@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import HomePage from "./pages/HomePage/HomePage";
+import HomePage from "./HomePage/HomePage";
 
 export default function Index() {
   return (

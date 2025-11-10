@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { Button, Text, useColorScheme, View } from "react-native";
+import { Button, Text, View } from "react-native";
 
 const VisitsPerMonth = () => {
   const router = useRouter();
@@ -8,7 +8,7 @@ const VisitsPerMonth = () => {
       <Text>caooo</Text>
       <Button
         title='Go back'
-        onPress={() => router.push("/pages/HomePage/HomePage")}
+        onPress={() => router.push("/HomePage/HomePage")}
       />
     </View>
   );

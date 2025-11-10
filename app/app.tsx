@@ -3,8 +3,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import "react-native-gesture-handler";
 import Header from "./components/Header/Header";
-import HomePage from "./pages/HomePage/HomePage";
-import Tracking from "./pages/Tracking/VisitsPerMonth";
+import HomePage from "./HomePage/HomePage";
+import Tracking from "./Tracking/VisitsPerMonth";
 
 const Stack = createNativeStackNavigator();
 
