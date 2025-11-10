@@ -1,12 +1,14 @@
-import { StyleSheet, View } from "react-native";
-import { Text } from "react-native-gesture-handler";
-import VisitsPerMonth from "../Tracking/VisitsPerMonth";
+import { useRouter } from "expo-router";
+import { Button, StyleSheet, Text, View } from "react-native";
 
 const HomePage = () => {
+  const router = useRouter();
+
   const Styles = StyleSheet.create({
     container: {
       display: "flex",
       alignItems: "center",
+      gap: 20,
     },
     trackingInfo: {
       display: "flex",
@@ -26,7 +28,11 @@ const HomePage = () => {
       </View>
       <View>
         <Text>Click the tracking tab to set your monthly visits!</Text>
-        <VisitsPerMonth />
+        <Button
+          title='Check your process'
+          onPress={() => router.push("/pages/Tracking/VisitsPerMonth")}
+          color='green'
+        />
       </View>
     </View>
   );
