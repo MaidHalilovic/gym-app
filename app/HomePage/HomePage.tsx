@@ -27,7 +27,7 @@ const HomePage = () => {
         <Text style={Styles.titleText}>Welcome to GymApp!</Text>
       </View>
       <View>
-        <Text>Click the tracking tab to set your monthly visits!</Text>
+        {/* <Text>Click the tracking tab to set your monthly visits!</Text> */}
         <Button
           title='Check your process'
           onPress={() => router.push("/Tracking/VisitsPerMonth")}
