@@ -3,7 +3,7 @@ import { Image, StyleSheet, TextInput, View } from "react-native";
 const Header = () => {
   const styles = StyleSheet.create({
     header: {
-      backgroundColor: "#BB6653",
+      backgroundColor: "#437057",
       display: "flex",
       justifyContent: "center",
       flexDirection: "row",
