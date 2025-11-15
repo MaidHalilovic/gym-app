@@ -19,6 +19,14 @@ const HomePage = () => {
       fontWeight: "bold",
       marginBottom: 20,
     },
+    btnStyle: {
+      borderStyle: "solid",
+      borderWidth: 1,
+      borderColor: "black",
+      borderRadius: 10,
+      height: 120,
+      width: 385,
+    },
   });
 
   return (
@@ -26,8 +34,8 @@ const HomePage = () => {
       <View style={Styles.trackingInfo}>
         <Text style={Styles.titleText}>Welcome to GymApp!</Text>
       </View>
-      <View>
-        {/* <Text>Click the tracking tab to set your monthly visits!</Text> */}
+      <Text>Click the tracking tab to set your monthly visits!</Text>
+      <View style={Styles.btnStyle}>
         <Button
           title='Check your process'
           onPress={() => router.push("/Tracking/VisitsPerMonth")}

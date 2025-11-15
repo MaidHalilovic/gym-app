@@ -1,14 +1,17 @@
-import { Stack } from "expo-router";
-import { View } from "react-native";
+import { Slot } from "expo-router";
+import React from "react";
+import { StyleSheet, View } from "react-native";
 import Header from "./components/Header/Header";
-import HomePage from "./HomePage/HomePage";
 
 export default function RootLayout() {
-  <Stack screenOptions={{ headerShown: true }} />;
   return (
-    <View style={{ flex: 1 }}>
+    <View style={styles.container}>
       <Header />
-      <HomePage />
+      <Slot />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: "#ffffff" },
+});

@@ -6,10 +6,7 @@ const VisitsPerMonth = () => {
   return (
     <View>
       <Text>caooo</Text>
-      <Button
-        title='Go back'
-        onPress={() => router.push("/HomePage/HomePage")}
-      />
+      <Button title='Go back' onPress={() => router.back()} />
     </View>
   );
 };
