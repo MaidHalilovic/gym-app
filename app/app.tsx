@@ -5,6 +5,7 @@ import "react-native-gesture-handler";
 import Header from "./components/Header/Header";
 import HomePage from "./HomePage/HomePage";
 import Tracking from "./Tracking/VisitsPerMonth";
+import Exercises from "./Exercises/ChooseExercise";
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ export default function App() {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name='Home' component={HomePage} />
         <Stack.Screen name='VisitsPerMonth' component={Tracking} />
+        <Stack.Screen name='Exercies' component={Exercises} />
       </Stack.Navigator>
     </NavigationContainer>
   );

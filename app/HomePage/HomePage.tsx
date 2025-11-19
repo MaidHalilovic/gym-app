@@ -42,6 +42,13 @@ const HomePage = () => {
           color='green'
         />
       </View>
+      <View style={Styles.btnStyle}>
+        <Button
+          title='Choose exercies that you like'
+          onPress={() => router.push("../Exercises/ChooseExercise")}
+          color='blue'
+        />
+      </View>
     </View>
   );
 };
