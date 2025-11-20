@@ -2,12 +2,16 @@ import { Slot } from "expo-router";
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import Header from "./components/Header/Header";
+import Navigator from "./Navigator/Navigator";
 
 export default function RootLayout() {
   return (
     <View style={styles.container}>
       <Header />
-      <Slot />
+      <View style={{ flex: 1, paddingBottom: 100 }}>
+        <Slot />
+      </View>
+      <Navigator />
     </View>
   );
 }

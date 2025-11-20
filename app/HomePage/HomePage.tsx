@@ -30,7 +30,6 @@ const HomePage = () => {
     text: {
       display: "flex",
       textAlign: "center",
-
       fontSize: 15,
     },
   });

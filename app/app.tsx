@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import HomePage from "./HomePage/HomePage";
 import Tracking from "./Tracking/VisitsPerMonth";
 import Exercises from "./Exercises/ChooseExercise";
+import Navigator from "./Navigator/Navigator";
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,7 @@ export default function App() {
         <Stack.Screen name='VisitsPerMonth' component={Tracking} />
         <Stack.Screen name='Exercies' component={Exercises} />
       </Stack.Navigator>
+      <Navigator />
     </NavigationContainer>
   );
 }
