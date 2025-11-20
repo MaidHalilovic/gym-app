@@ -27,6 +27,12 @@ const HomePage = () => {
       height: 120,
       width: 385,
     },
+    text: {
+      display: "flex",
+      textAlign: "center",
+
+      fontSize: 15,
+    },
   });
 
   return (
@@ -34,7 +40,9 @@ const HomePage = () => {
       <View style={Styles.trackingInfo}>
         <Text style={Styles.titleText}>Welcome to GymApp!</Text>
       </View>
-      <Text>Click the tracking tab to set your monthly visits!</Text>
+      <Text style={Styles.text}>
+        Click the tracking tab to set your monthly visits!
+      </Text>
       <View style={Styles.btnStyle}>
         <Button
           title='Check your process'
@@ -42,6 +50,9 @@ const HomePage = () => {
           color='green'
         />
       </View>
+      <Text style={Styles.text}>
+        Click the exercies tab to set your favourite exercies
+      </Text>
       <View style={Styles.btnStyle}>
         <Button
           title='Choose exercies that you like'
