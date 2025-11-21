@@ -5,7 +5,7 @@ const VisitsPerMonth = () => {
   const router = useRouter();
   return (
     <View>
-      <Text>caooo</Text>
+      <Text>Calendar</Text>
       <Button title='Go back' onPress={() => router.back()} />
     </View>
   );

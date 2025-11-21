@@ -1,7 +1,10 @@
 import { Ionicons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
 import { Pressable, StyleSheet, View } from "react-native";
 
 const Navigator = () => {
+  const router = useRouter();
+
   const Styles = StyleSheet.create({
     navigator: {
       display: "flex",
@@ -21,13 +24,13 @@ const Navigator = () => {
       style={{
         display: "flex",
         alignItems: "center",
-        marginBottom: 10,
+        marginBottom: 20,
         marginTop: 10,
       }}
     >
       <View style={Styles.navigator}>
         <Pressable
-          onPress={() => console.log("Clicked")}
+          onPress={() => router.push("/HomePage/HomePage")}
           style={{
             padding: 12,
             borderRadius: 50,
@@ -36,7 +39,7 @@ const Navigator = () => {
           <Ionicons name='home' size={30} color='black' />
         </Pressable>
         <Pressable
-          onPress={() => console.log("Clicked")}
+          onPress={() => router.push("/Exercises/ChooseExercise")}
           style={{
             padding: 12,
             borderRadius: 50,
@@ -45,7 +48,7 @@ const Navigator = () => {
           <Ionicons name='barbell' size={30} color='black' />
         </Pressable>
         <Pressable
-          onPress={() => console.log("Clicked")}
+          onPress={() => router.push("/Tracking/VisitsPerMonth")}
           style={{
             padding: 12,
             borderRadius: 50,
@@ -54,7 +57,7 @@ const Navigator = () => {
           <Ionicons name='calendar' size={30} color='black' />
         </Pressable>
         <Pressable
-          onPress={() => console.log("Clicked")}
+          onPress={() => console.log("Profile clicked")}
           style={{
             padding: 12,
             borderRadius: 50,
