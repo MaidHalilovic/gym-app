@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { Button, ScrollView, StyleSheet, Text, View } from "react-native";
 
 const HomePage = () => {
   const router = useRouter();
@@ -32,6 +32,13 @@ const HomePage = () => {
       textAlign: "center",
       fontSize: 15,
     },
+    
+  // container: {
+  //   padding: 16,
+  //   paddingBottom: 140,
+  // },
+  title: { fontSize: 24, marginBottom: 16 },
+
   });
 
   return (
@@ -59,6 +66,11 @@ const HomePage = () => {
           color='blue'
         />
       </View>
+      
+    
+  
+
+
     </View>
   );
 };
