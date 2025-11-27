@@ -7,22 +7,27 @@ const Footer = () => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      gap: 20,
+      gap: 40,
       backgroundColor: "#D7C097",
       height: 200,
     },
     icons: {
       display: "flex",
       flexDirection: "row",
-      gap: 30,
+      gap: 20,
+    },
+    text: {
+      marginTop: 20,
     },
   });
 
   return (
     <View style={Styles.conatiner}>
-      <Text>Informations</Text>
-      <View style={Styles.icons}>
-        <Pressable>
+      <View style={Styles.text}>
+        <Text>Informations</Text>
+      </View>
+      <View>
+        <Pressable style={Styles.icons}>
           <Ionicons
             onPress={() => Linking.openURL(`https://github.com/MaidHalilovic`)}
             name='logo-github'
