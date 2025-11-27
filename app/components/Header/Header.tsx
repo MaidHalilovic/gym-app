@@ -21,7 +21,7 @@ const Header = () => {
       padding: 10,
       fontSize: 18,
     },
-  });
+  }); //need to style header (remove the search and add the button for search and add profile button for progile
 
   return (
     <View style={styles.header}>
