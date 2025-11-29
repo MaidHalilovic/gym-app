@@ -9,6 +9,25 @@ const VisitsPerMonth = () => {
   const Styles = StyleSheet.create({
     container: {
       display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    calendar: {
+      marginTop: 20,
+      marginBottom: 20,
+      borderStyle: "solid",
+      borderWidth: 1,
+      borderColor: "black",
+      width: 400,
+    },
+    btn: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      backgroundColor: "#435663",
+      width: 120,
+      textAlign: "center",
+      borderRadius: 10,
     },
   });
 
@@ -16,22 +35,23 @@ const VisitsPerMonth = () => {
   return (
     <View style={Styles.container}>
       <Text>Calendar</Text>
-      <Button title='Go back' onPress={() => router.back()} />
-      {/* <View style={Styles.btn}>
-        <Button title='Add +1 Visit' color={""} />
-      </View> */}
-      <Calendar
-        onDayPress={(day) => {
-          setselectedDate(day.dateString);
-        }}
-        markedDates={{
-          [selectedDate]: {
-            selected: true,
-            marked: true,
-            selectedColor: "blue",
-          },
-        }}
-      />
+      <View style={Styles.btn}>
+        <Button title='Go back' onPress={() => router.back()} />
+      </View>
+      <View style={Styles.calendar}>
+        <Calendar
+          onDayPress={(day) => {
+            setselectedDate(day.dateString);
+          }}
+          markedDates={{
+            [selectedDate]: {
+              selected: true,
+              marked: true,
+              selectedColor: "blue",
+            },
+          }}
+        />
+      </View>
     </View>
   );
 };
