@@ -1,10 +1,12 @@
 import { useRouter } from "expo-router";
 import { useState } from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { Button, Modal, StyleSheet, Text, View } from "react-native";
 import { Calendar } from "react-native-calendars";
 
 const VisitsPerMonth = () => {
   const [selectedDate, setselectedDate] = useState("");
+  const [isModalVisible, setIsModalVisible] = useState(true);
+  const today = new Date().toISOString().split("T")[0];
 
   const Styles = StyleSheet.create({
     container: {
@@ -18,7 +20,7 @@ const VisitsPerMonth = () => {
       borderStyle: "solid",
       borderWidth: 1,
       borderColor: "black",
-      width: 400,
+      width: 450,
     },
     btn: {
       display: "flex",
@@ -40,14 +42,16 @@ const VisitsPerMonth = () => {
       </View>
       <View style={Styles.calendar}>
         <Calendar
+          maxDate={today}
           onDayPress={(day) => {
+            setIsModalVisible(true);
             setselectedDate(day.dateString);
           }}
           markedDates={{
             [selectedDate]: {
               selected: true,
               marked: true,
-              selectedColor: "blue",
+              selectedColor: "green",
             },
           }}
         />
