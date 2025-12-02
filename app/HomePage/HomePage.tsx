@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { Button, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 
 const HomePage = () => {
   const router = useRouter();
@@ -8,7 +8,7 @@ const HomePage = () => {
     container: {
       display: "flex",
       alignItems: "center",
-      gap: 20,
+      gap: 30,
     },
     trackingInfo: {
       display: "flex",
@@ -20,25 +20,23 @@ const HomePage = () => {
       marginBottom: 20,
     },
     btnStyle: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
       borderStyle: "solid",
       borderWidth: 1,
       borderColor: "black",
       borderRadius: 10,
-      height: 120,
+      height: 100,
       width: 385,
+      backgroundColor: "#435663",
     },
     text: {
       display: "flex",
       textAlign: "center",
       fontSize: 15,
     },
-    
-  // container: {
-  //   padding: 16,
-  //   paddingBottom: 140,
-  // },
-  title: { fontSize: 24, marginBottom: 16 },
-
+    title: { fontSize: 24, marginBottom: 16 },
   });
 
   return (
@@ -53,7 +51,7 @@ const HomePage = () => {
         <Button
           title='Check your process'
           onPress={() => router.push("/Tracking/VisitsPerMonth")}
-          color='green'
+          color='white'
         />
       </View>
       <Text style={Styles.text}>
@@ -63,14 +61,9 @@ const HomePage = () => {
         <Button
           title='Choose exercies that you like'
           onPress={() => router.push("../Exercises/ChooseExercise")}
-          color='blue'
+          color='white'
         />
       </View>
-      
-    
-  
-
-
     </View>
   );
 };
