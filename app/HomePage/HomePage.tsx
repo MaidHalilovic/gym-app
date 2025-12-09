@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const HomePage = () => {
   const router = useRouter();
@@ -29,14 +29,24 @@ const HomePage = () => {
       borderRadius: 10,
       height: 100,
       width: 385,
-      backgroundColor: "#435663",
     },
     text: {
       display: "flex",
       textAlign: "center",
       fontSize: 15,
     },
-    title: { fontSize: 24, marginBottom: 16 },
+    title: {
+      borderStyle: "solid",
+      borderWidth: 1,
+      borderColor: "black",
+      borderRadius: 10,
+      height: 100,
+      width: 385,
+      fontSize: 24,
+      textAlign: "center",
+      color: "white",
+      backgroundColor: "#435663",
+    },
   });
 
   return (
@@ -48,21 +58,21 @@ const HomePage = () => {
         Click the tracking tab to set your monthly visits!
       </Text>
       <View style={Styles.btnStyle}>
-        <Button
-          title='Check your process'
-          onPress={() => router.push("/Tracking/VisitsPerMonth")}
-          color='white'
-        />
+        <TouchableOpacity
+          onPress={() => router.push("../Tracking/VisitsPerMonth")}
+        >
+          <Text style={Styles.title}>Set your monthly visits</Text>
+        </TouchableOpacity>
       </View>
       <Text style={Styles.text}>
         Click the exercies tab to set your favourite exercies
       </Text>
       <View style={Styles.btnStyle}>
-        <Button
-          title='Choose exercies that you like'
+        <TouchableOpacity
           onPress={() => router.push("../Exercises/ChooseExercise")}
-          color='white'
-        />
+        >
+          <Text style={Styles.title}>Choose your favourite exercies</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );

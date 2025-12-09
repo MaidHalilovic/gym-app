@@ -25,7 +25,7 @@ const Header = () => {
       marginTop: 100,
       height: 40,
     },
-  }); //need to style header (remove the search and add tfontSize: 24,he button for search and add profile button for progile
+  });
 
   return (
     <View style={styles.header}>
