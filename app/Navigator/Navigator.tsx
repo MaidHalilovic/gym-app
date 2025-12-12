@@ -13,7 +13,7 @@ const Navigator = () => {
       alignItems: "center",
       borderStyle: "solid",
       borderWidth: 1,
-      borderColor: "black",
+      backgroundColor: "transparent",
       width: 250,
       borderRadius: 50,
     },
@@ -26,6 +26,7 @@ const Navigator = () => {
         alignItems: "center",
         marginBottom: 20,
         marginTop: 10,
+        backgroundColor: "transparent",
       }}
     >
       <View style={Styles.navigator}>
