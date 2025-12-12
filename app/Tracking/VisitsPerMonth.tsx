@@ -1,6 +1,6 @@
 import { useRouter } from "expo-router";
 import { useState } from "react";
-import { Button, Modal, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Calendar } from "react-native-calendars";
 
 const VisitsPerMonth = () => {
@@ -38,7 +38,11 @@ const VisitsPerMonth = () => {
     <View style={Styles.container}>
       <Text>Calendar</Text>
       <View style={Styles.btn}>
-        <Button title='Go back' onPress={() => router.back()} />
+        <TouchableOpacity onPress={() => router.back()}>
+          <Text style={{ color: "white", padding: 10, fontSize: 16 }}>
+            Go Back
+          </Text>
+        </TouchableOpacity>
       </View>
       <View style={Styles.calendar}>
         <Calendar
