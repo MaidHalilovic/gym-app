@@ -24,7 +24,7 @@ const ChooseExercise = () => {
 
   return (
     <View style={Styles.container}>
-      <Text>Choose exercies</Text>
+      <Text>Choose exercies for your workout</Text>
       <View style={Styles.btn}>
         <TouchableOpacity onPress={() => router.back()}>
           <Text style={{ color: "white", padding: 10, fontSize: 16 }}>

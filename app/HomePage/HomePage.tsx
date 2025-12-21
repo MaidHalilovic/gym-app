@@ -65,13 +65,13 @@ const HomePage = () => {
         </TouchableOpacity>
       </View>
       <Text style={Styles.text}>
-        Click the exercies tab to set your favourite exercies
+        Click the exercises tab to make your workout plan!!!
       </Text>
       <View style={Styles.btnStyle}>
         <TouchableOpacity
           onPress={() => router.push("../Exercises/ChooseExercise")}
         >
-          <Text style={Styles.title}>Choose your favourite exercies</Text>
+          <Text style={Styles.title}>Choose exercises for your workout</Text>
         </TouchableOpacity>
       </View>
     </View>
