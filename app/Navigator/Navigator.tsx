@@ -7,13 +7,12 @@ const Navigator = () => {
 
   const Styles = StyleSheet.create({
     navigator: {
-      display: "flex",
+      // display: "flex",
       flexDirection: "row",
       justifyContent: "center",
-      alignItems: "center",
+      // alignItems: "center",
       borderStyle: "solid",
       borderWidth: 1,
-      backgroundColor: "transparent",
       width: 250,
       borderRadius: 50,
     },
