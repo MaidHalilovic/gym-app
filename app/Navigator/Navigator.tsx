@@ -11,10 +11,12 @@ const Navigator = () => {
       flexDirection: "row",
       justifyContent: "center",
       // alignItems: "center",
-      borderStyle: "solid",
-      borderWidth: 1,
-      width: 250,
+      // borderStyle: "solid",
+      // borderWidth: 1,
+      width: 350,
       borderRadius: 50,
+      gap: 20,
+      backgroundColor: "#D9E6E8",
     },
   });
 
@@ -23,8 +25,8 @@ const Navigator = () => {
       style={{
         display: "flex",
         alignItems: "center",
+        justifyContent: "center",
         marginBottom: 20,
-        marginTop: 10,
         backgroundColor: "transparent",
       }}
     >
